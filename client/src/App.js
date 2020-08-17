@@ -18,28 +18,32 @@ const navLinks = [
       text: 'Morgan Houston',
       path: '/',
       icon: <FaHome 
-              size={46}/>,
+              size={46}
+              title="Home"/>,
       id: 'home'
   },
   {
       text: 'PROJECTS',
       path: '/Projects',
       icon: <FaFolder
-              size={46} />,
+              size={46}
+              title="Projects" />,
       id: 'projects'
   },
   {
       text: 'ABOUT ME',
       path: '/About',
       icon: <FaQuestionCircle
-              size={46} />,
+              size={46}
+              title="About Me" />,
       id: 'about'
   },
   {
       text: 'CONTACT ME',
       path: '/Contact',
       icon: <FaEnvelope
-              size={46} />,
+              size={46}
+              title="Contact Me" />,
       id: 'contact'
   }
 ]

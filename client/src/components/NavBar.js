@@ -23,16 +23,23 @@ const TopBanner = ({ navLinks }) => {
     )
 }
 
-const SideBanner = ({ navLinks, linkColor }) => {
+const SideBanner = ({ navLinks, linkColor, hoverColor }) => {
+
+    const [hoverIndex, setHoverIndex] = useState(-1);
+
     return (
         <>
             <ul className='side-bar'>
             {navLinks.map((link, key) => 
-                <li key={key}>
+                <li key={key}
+                    onMouseEnter={ () => setHoverIndex(key)}
+                    onMouseLeave={ () => setHoverIndex(-1)}
+                >
                     <Link
                         id={link.id}
                         to={link.path}
-                        style={{ color: linkColor,
+                        style={{ 
+                                color: hoverIndex === key ? (hoverColor || '#999') : 'white',
                                 padding: 10 }}
                     >
                         {link.icon}
@@ -46,7 +53,6 @@ const SideBanner = ({ navLinks, linkColor }) => {
 
 const NavBar = ({ navLinks, linkColor }) => {
 
-    const [hoverIndex, setHoverIndex] = useState(-1);
     const [navOpen, setNavOpen] = useState(false);
 
     const [windowWidth, setWindowWidth] = useState(0);
@@ -62,14 +68,15 @@ const NavBar = ({ navLinks, linkColor }) => {
 
     return(
         <>
-            <nav class="responsive-nav">
+            <nav className="responsive-nav">
                 {windowWidth >= 712 ?
                     <TopBanner
                     navLinks={navLinks} />
                     :
                     <SideBanner
                     navLinks={navLinks}
-                    linkColor="white" />
+                    linkColor="white"
+                    hoverColor="gray" />
                 }
             </nav>
 
