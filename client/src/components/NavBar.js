@@ -40,9 +40,10 @@ const SideBanner = ({ navLinks, linkColor, hoverColor }) => {
                         to={link.path}
                         style={{ 
                                 color: hoverIndex === key ? (hoverColor || '#999') : 'white',
-                                padding: 10 }}
+                                 }}
                     >
                         {link.icon}
+                        {link.id.toUpperCase()}
                     </Link>
                 </li>
                 )}
@@ -51,7 +52,7 @@ const SideBanner = ({ navLinks, linkColor, hoverColor }) => {
     )
 }
 
-const NavBar = ({ navLinks, linkColor }) => {
+const NavBar = ({ navLinks }) => {
 
     const [navOpen, setNavOpen] = useState(false);
 
