@@ -1,28 +1,76 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 //style
 import '../style/NavBar.scss';
 
-const TopBanner = () => {
+const TopBanner = ({ navLinks }) => {
     return (
         <>
-            <h2>Morgan Houston</h2>
             <ul className='top-bar'>
-                <li><Link id='projects' to='/Projects'>PROJECTS</Link></li>
-                <li><Link id='about' to='/About'>ABOUT</Link></li>
-                <li><Link id='contact' to='/Contact'>CONTACT</Link></li>
+                {navLinks.map((link, key) => 
+                <li key={key}>
+                    <Link
+                        id={link.id}
+                        to={link.path}
+                    >
+                        {link.text}
+                    </Link>
+                </li>
+                )}
             </ul>
         </>
     )
 }
 
-const NavBar = () => {
+const SideBanner = ({ navLinks, linkColor }) => {
+    return (
+        <>
+            <ul className='side-bar'>
+            {navLinks.map((link, key) => 
+                <li key={key}>
+                    <Link
+                        id={link.id}
+                        to={link.path}
+                        style={{ color: linkColor,
+                                padding: 10 }}
+                    >
+                        {link.icon}
+                    </Link>
+                </li>
+                )}
+            </ul>
+        </>
+    )
+}
+
+const NavBar = ({ navLinks, linkColor }) => {
+
+    const [hoverIndex, setHoverIndex] = useState(-1);
+    const [navOpen, setNavOpen] = useState(false);
+
+    const [windowWidth, setWindowWidth] = useState(0);
+    let resizeWindow = () => {
+        setWindowWidth(window.innerWidth);
+    };
+
+    useEffect(() => {
+        resizeWindow();
+        window.addEventListener("resize", resizeWindow);
+        return () => window.removeEventListener("resize", resizeWindow);
+    }, []);
 
     return(
         <>
-            <nav>
-                <TopBanner />
+            <nav class="responsive-nav">
+                {windowWidth >= 712 ?
+                    <TopBanner
+                    navLinks={navLinks} />
+                    :
+                    <SideBanner
+                    navLinks={navLinks}
+                    linkColor="white" />
+                }
             </nav>
 
         </>
