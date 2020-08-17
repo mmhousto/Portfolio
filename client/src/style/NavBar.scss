@@ -1,6 +1,6 @@
 $background: #111111;
 
-nav {
+.responsive-top {
     display: flex;
     color: #ffffff;
     background-color: $background;
@@ -56,14 +56,26 @@ nav {
             color: white;
         }
     }
+}
+
+.responsive-side {
+    display: flex;
+    color: #ffffff;
+    background-color: $background;
+    width: 64px;
+    height: 100%;
 
     .side-bar {
         display: absolute;
         list-style-type: none;
         margin: auto;
-        padding-left: 15px;
+        padding: 0;
         left: 0;
         height: 100%;
-        width: 80px;
+        width: 100%;
+
+        li {
+            margin: 26px 0px;
+        }
     }
 }

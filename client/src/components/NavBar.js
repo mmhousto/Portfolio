@@ -68,17 +68,20 @@ const NavBar = ({ navLinks, linkColor }) => {
 
     return(
         <>
-            <nav className="responsive-nav">
+            
                 {windowWidth >= 712 ?
+                    <nav className="responsive-top">
                     <TopBanner
                     navLinks={navLinks} />
+                    </nav>
                     :
+                    <nav className="responsive-side">
                     <SideBanner
                     navLinks={navLinks}
                     linkColor="white"
                     hoverColor="gray" />
+                    </nav>
                 }
-            </nav>
 
         </>
     );
