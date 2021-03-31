@@ -1,5 +1,53 @@
-.banner {
-    width: 50%;
-    height: 500px;
-    padding: 75px;
+.banner-container {
+    width: auto;
+    height: auto;
+    padding: 75px 120px 10px;
+    background-color: #0066ff;
+    position: relative;
+    font-size: 32px;
+
+    span {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+    .text {
+        color: white;
+        
+    }
+}
+
+.work-container {
+    width: auto;
+    height: auto;
+    padding: 75px 120px;
+    background-color: #0066ff;
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    
+    .text {
+        color: white;
+        font-size: 32px;
+    }
+
+}
+
+.project-container {
+    width: 75%;
+    padding: 25px;
+    border: solid 1px white;
+    margin: auto;
+
+    .text-container {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+    }
+
+    .image-container {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+    }
 }
