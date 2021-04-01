@@ -1,10 +1,10 @@
 .banner-container {
     width: auto;
-    height: auto;
+    height: 100vh;
     padding: 75px 120px 10px;
-    background-color: #0066ff;
+    background-image: url("../images/Developer.png");
     position: relative;
-    font-size: 32px;
+    font-size: 22px;
 
     span {
         font-size: 2em;
@@ -28,7 +28,7 @@
     
     .text {
         color: white;
-        font-size: 32px;
+        font-size: 22px;
     }
 
 }
