@@ -23,12 +23,35 @@ const Banner = () => {
                         <span>Shalom,</span>
                         <span>God dag,</span>
                     </TextLoop>{" "}
-                <br/><br/><h1>My name is Morgan Houston. I am a Junior Game & Web Developer!</h1>
+                <br/><br/><h1>My name is Morgan Houston. I am an aspiring Game & Web Developer!</h1>
             </div>
 
             <div className="social">
                 <h2>Connect with me:</h2><br/>
-                <h3><FaTwitter className="icon" size={70}/> &nbsp; <FaLinkedin className="icon" size={70}/> &nbsp; <FaGithub className="icon" size={70}/></h3>
+                <h3><FaTwitter
+                        className="icon"
+                        size={70}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.open("https://twitter.com/mm6sgamingco", "_blank")
+                        }}
+                    /> &nbsp;&nbsp;&nbsp;
+                    <FaLinkedin
+                        className="icon"
+                        size={70}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.open("https://linkedin.com/in/morgan-houston", "_blank")
+                        }}
+                    /> &nbsp;&nbsp;&nbsp;
+                    <FaGithub
+                        className="icon"
+                        size={70}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.open("https://github.com/mmhousto", "_blank")
+                        }}
+                    /></h3>
             </div>
         </div>
         </>

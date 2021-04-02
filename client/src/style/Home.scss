@@ -1,12 +1,12 @@
 .banner-container {
     width: 100vw;
     height: 100vh;
-    padding: 75px 120px 10px;
     background-image: url("../images/Welcome2.png");
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
     font-size: 22px;
+    
 
     span {
         font-size: 2em;
@@ -14,6 +14,7 @@
     }
 
     .intro {
+        padding: 50px 120px;
         color: white;
         height: 50%;
     }
@@ -34,11 +35,11 @@
 .work-container {
     width: 100vw;
     height: auto;
-    padding: 75px 120px;
     background-color: #0066ff;
     position: relative;
     font-size: 22px;
     text-align: center;
+    padding: 5px 0px 20px;
     
     .text {
         color: white;
@@ -49,7 +50,7 @@
 
 .project-container {
     width: 75%;
-    padding: 25px;
+    padding: 0px 0px 10px;
     border: solid 1px white;
     margin: auto;
 
@@ -60,6 +61,7 @@
     }
 
     .image-container {
+        text-align: initial;
         display: inline-block;
         width: 50%;
         height: 100%;

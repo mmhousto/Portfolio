@@ -3,13 +3,16 @@ import '../style/Home.scss';
 
 import Banner from '../components/Banner.js';
 import Work from '../components/Work.js';
+import Font from 'react-font';
 
 function Home() {
 
     return (
         <>
-        <Banner/>
-        <Work/>
+        <Font family='Rubik'>
+            <Banner/>
+            <Work/>
+        </Font>
         </>
     );
 }
