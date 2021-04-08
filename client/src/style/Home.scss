@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     position: relative;
     font-size: 22px;
-    
 
     span {
         font-size: 2em;
@@ -26,44 +25,73 @@
         text-align: center;
 
         .icon:hover {
-            color: #FF00FF;
+            color: #ff00ff;
         }
     }
-    
 }
 
 .work-container {
     width: 100vw;
-    height: auto;
-    background-color: #0066ff;
+    height: 100vh;
+    background-color: black;
     position: relative;
     font-size: 22px;
     text-align: center;
-    padding: 5px 0px 20px;
-    
-    .text {
-        color: white;
-        font-size: 22px;
+    color: white;
+
+    hr {
+        border-color: #ff00ff;
     }
 
+    .text {
+        padding: 20px;
+        font-size: 22px;
+    }
 }
 
 .project-container {
-    width: 75%;
-    padding: 0px 0px 10px;
+    width: 735px;
+    height: 375px;
     border: solid 1px white;
+    position: relative;
+    cursor: pointer;
     margin: auto;
+    perspective: 500px;
+
+    img {
+        width: 735px;
+        height: 375px;
+        
+    }
+
+    .image-container{
+        opacity: 1;
+        transition: all 0.4s ease-in;
+    }
 
     .text-container {
-        display: inline-block;
-        width: 50%;
+        white-space: pre-line;
+        width: 100%;
         height: 100%;
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateY(180deg);
+        transform-origin: 50%;
+        background: #FF00FF;
+        color: black;
+        opacity: 0;
+        transition: all 0.4s ease-in;
     }
+}
 
-    .image-container {
-        text-align: initial;
-        display: inline-block;
-        width: 50%;
-        height: 100%;
-    }
+.project-container:hover .text-container {
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+}
+
+.project-container:hover .image-container {
+    transform: rotateY(-180deg);
+    opacity: 0;
 }
