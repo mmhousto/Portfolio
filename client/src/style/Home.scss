@@ -161,7 +161,7 @@
 
 }
 
-@media (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-device-width: 860px) {
     .banner-container {
         width: 100vw;
         height: 100%;
