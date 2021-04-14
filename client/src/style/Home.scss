@@ -129,7 +129,7 @@
         height: auto;
 
         .text-container {
-            font-size: 2vw;
+            font-size: 2.5vw;
         }
         
     }
@@ -139,6 +139,14 @@
 @media only screen and (max-width: 860px) {
     .banner-container {
         font-size: 12px;
+    }
+
+    .project-container {
+
+        .text-container {
+            font-size: 3vw;
+        }
+        
     }
 }
 
@@ -165,17 +173,6 @@
     .banner-container {
         width: 100vw;
         height: 100%;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-
-    .project-container {
-
-        .text-container {
-            font-size: 3vw;
-        }
-        
     }
 }
 
