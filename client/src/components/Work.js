@@ -4,7 +4,7 @@ import MMsGCo from '../images/MMsGaming.png';
 import MyStripes from '../images/My-Stripes.jpg';
 import PaddleBalls from '../images/Paddle-Balls.png';
 import DDD from '../images/DDD.png';
-import { FaPhp, FaHtml5, FaCss3, FaJs, FaAndroid } from 'react-icons/fa';
+import { FaPhp, FaHtml5, FaCss3, FaJs, FaAndroid, FaGithubSquare } from 'react-icons/fa';
 
 const Project = (props) => {
 
@@ -26,7 +26,7 @@ const Project = (props) => {
                     <p onClick={(e) => {
                             e.preventDefault();
                             window.open(repo, "_blank")
-                        }}><a href="">Repo</a></p>
+                        }}><FaGithubSquare size={45} className="git"/></p>
                 </div>
             </div>
         </>
