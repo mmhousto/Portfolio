@@ -40,7 +40,7 @@
     height: auto;
     background-color: black;
     position: relative;
-    font-size: 22px;
+    font-size: 2vw;
     text-align: center;
     color: white;
 
@@ -50,58 +50,61 @@
 
     .text {
         padding: 20px;
-        font-size: 22px;
+        font-size: 2vw;
     }
 }
 
 .project-container {
-    width: 735px;
-    height: 375px;
+    width: 50%;
+    height: auto;
     border: solid 1px white;
     position: relative;
     cursor: pointer;
     margin: auto;
-    perspective: 500px;
+    background: #FF00FF;
+    //perspective: 500px;
 
     img {
         max-width:100%;
         max-height:100%;
-        
+        display: block;
     }
 
     .image-container{
         opacity: 1;
-        transition: all 0.4s ease-in;
+        transition: .5s ease-out;
+        width: 100%;
+        height: 100%;
     }
 
     .text-container {
         white-space: pre-line;
-        width: 100%;
+        font-size: 1.5vw;
+        width: 90%;
         height: 100%;
         position: absolute;
         content: "";
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) rotateY(180deg);
+        transform: translate(-50%, -50%);// rotateY(180deg);
         transform-origin: 50%;
-        background: #FF00FF;
         color: black;
         opacity: 0;
-        transition: all 0.4s ease-in;
+        transition: .5s ease-in;
     }
 }
 
 .project-container:hover .text-container {
-    transform: translate(-50%, -50%) rotateY(0deg);
+    transform: translate(-50%, -50%);// rotateY(0deg);
     opacity: 1;
 }
 
 .project-container:hover .image-container {
-    transform: rotateY(-180deg);
+    //transform: rotateY(-180deg);
     opacity: 0;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .banner-container {
         width: 100vw;
         height: 75vh;
@@ -124,18 +127,22 @@
     .project-container {
         width: 100vw;
         height: auto;
+
+        .text-container {
+            font-size: 2vw;
+        }
         
     }
 
 }
 
-@media only screen and (max-device-width: 860px) {
+@media only screen and (max-width: 860px) {
     .banner-container {
         font-size: 12px;
     }
 }
 
-@media only screen and (max-device-width: 767px) {
+@media only screen and (max-width: 767px) {
     .banner-container {
 
         .intro {
@@ -151,15 +158,28 @@
             }
         }
     }
-    .project-container {
-        width: 100vw;
-        height: auto;
-        
-    }
 
 }
 
-@media only screen and (max-device-width: 500px) {
+@media (orientation: landscape) {
+    .banner-container {
+        width: 100vw;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+    .project-container {
+
+        .text-container {
+            font-size: 3vw;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
     .banner-container {
         font-size: 6px;
         width: 100vw;
