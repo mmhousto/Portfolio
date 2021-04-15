@@ -1,18 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import TextLoop from "react-text-loop";
 import MMsGCo from '../images/MMsGaming.png';
 import MyStripes from '../images/My-Stripes.jpg';
 import PaddleBalls from '../images/Paddle-Balls.png';
 import DDD from '../images/DDD.png';
 import { FaPhp, FaHtml5, FaCss3, FaJs, FaAndroid, FaGithubSquare } from 'react-icons/fa';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const Project = (props) => {
 
     const { title, description, image, url, repo } = props
 
+    useEffect(() => {
+        AOS.init({
+           duration : 2000
+        });
+      }, []);
+
     return (
         <>
-            <div className="project-container" onClick={(e) => {
+            <div className="project-container" data-aos="flip-left" data-aos-easing="ease-in-cubic" onClick={(e) => {
                             e.preventDefault();
                             window.open(url, "_blank")
                         }}>
@@ -35,13 +44,20 @@ const Project = (props) => {
 
 const Work = () => {
 
+    useEffect(() => {
+        AOS.init({
+           duration : 1000
+        });
+      }, []);
+
     return (
         <>
             <div className="work-container">
-                <div className="text">
-                    <h2>My Projects</h2>
+                <div className="text" data-aos='slide-left'>
+                        <h2>My Projects</h2>
                 </div>
                 <hr /><br/><br/>
+
                 <Project
                     title="MM's Gaming Community"
                     description={"A place for gamers to play free online games! If they have an account, as they play they will earn points. Gamers can use the points to get colored backgrounds, image backgrounds, circle trails, fonts, and custom cursors.\n\nCreated with XAMPP, MySQL, HTML5, CSS3, JavaScript, Ajax and PHP"}

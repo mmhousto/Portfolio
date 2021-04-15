@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import TextLoop from "react-text-loop";
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Banner = () => {
+
+    useEffect(() => {
+        AOS.init({
+          // duration : 5000
+        });
+      }, []);
 
     return(
         <>
@@ -23,10 +31,10 @@ const Banner = () => {
                         <span>Shalom,</span>
                         <span>God dag,</span>
                     </TextLoop>{" "}
-                <br/><br/><h1>My name is Morgan Houston. I am an aspiring Game & Web Developer!</h1>
+                <br/><br/><div data-aos="fade-up"><h1>My name is Morgan Houston. I am an aspiring Game & Web Developer!</h1></div>
             </div>
 
-            <div className="social">
+            <div className="social" data-aos="fade-up">
                 <h2>Connect with me:</h2><br/>
                 <h3><FaTwitter
                         className="icon"
