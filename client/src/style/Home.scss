@@ -108,6 +108,30 @@
     opacity: 0;
 }
 
+.about-container {
+    background-color: #FF00FF;
+    text-align: center;
+    font-size: 2vw;
+    height: 100vh;
+
+    hr {
+        border-color: black;
+    }
+    
+    h1 {
+        margin: 0px;
+        padding: 40px;
+    }
+
+    p {
+        position: relative;
+        left: 25%;
+        width: 25%;
+        border: 2px black dotted;
+    }
+
+}
+
 @media only screen and (max-width: 1024px) {
     .banner-container {
         width: 100vw;
