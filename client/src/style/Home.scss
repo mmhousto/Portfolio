@@ -98,6 +98,50 @@
     color: white;
 }
 
+.arrow-container {
+    margin: auto;
+    width: fit-content;
+    padding: 20px;
+    text-align: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .text {
+        color: white;
+        font-size: 1vw;
+    }
+}
+
+.arrow {
+    box-sizing: border-box;
+    height: 4vw;
+    width: 4vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+  }
+  
+.arrow-container:hover {
+
+    .arrow{
+        border-bottom-width: 3px;
+        border-right-width: 3px;
+        border-color: #FF00FF;
+    }
+    
+    .text {
+        color: #FF00FF;
+    }
+}
+
+#Project {
+}
+
 .project-container:hover .text-container {
     transform: translate(-50%, -50%);// rotateY(0deg);
     opacity: 1;

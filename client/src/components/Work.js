@@ -52,7 +52,7 @@ const Work = () => {
 
     return (
         <>
-            <div className="work-container">
+            <div id="Project" className="work-container">
                 <div className="text" data-aos='slide-left'>
                         <h2>My Projects</h2>
                 </div>
