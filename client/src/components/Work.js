@@ -5,7 +5,7 @@ import PaddleBalls from '../images/Paddle-Balls.png';
 import DDD from '../images/DDD.png';
 import { FaPhp, FaHtml5, FaCss3, FaJs, FaAndroid, FaGithubSquare } from 'react-icons/fa';
 import AOS from "aos";
-import "aos/dist/aos.css";
+import 'aos/dist/aos.css'; 
 
 
 
@@ -48,7 +48,9 @@ const Work = () => {
         AOS.init({
            duration : 1000
         });
+        window.addEventListener('load', AOS.refresh);
       }, []);
+
 
     return (
         <>
