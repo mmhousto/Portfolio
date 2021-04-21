@@ -255,7 +255,7 @@
 @media only screen and (orientation: landscape) and (max-device-width: 860px) {
     .banner-container {
         width: 100vw;
-        height: 100%;
+        height: 100vh;
     }
 }
 
@@ -263,14 +263,13 @@
     .banner-container {
         font-size: 6px;
         width: 100vw;
-        height: 50vh;
+        height: 75vh;
 
         .intro {
             padding: 15px 10px 0px 15px;
         }
 
         .social{
-            height: 50%;
             font-size: 6px;
 
             svg {
