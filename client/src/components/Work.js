@@ -7,8 +7,6 @@ import { FaPhp, FaHtml5, FaCss3, FaJs, FaAndroid, FaGithubSquare } from 'react-i
 import AOS from "aos";
 import 'aos/dist/aos.css'; 
 
-
-
 const Project = (props) => {
 
     const { title, description, image, url, repo } = props

@@ -2,6 +2,22 @@ import React, { useState, useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
+const Bubble = (props) => {
+
+    const { text, placement } = props
+
+    return (
+        <>
+            <div className="bubble" >
+                <p>
+                    {text}
+                </p>
+            </div>
+        </>
+    );
+}
+
 const About = () => {
 
     useEffect(() => {
@@ -17,9 +33,9 @@ const About = () => {
                     <h1>About Me</h1>
                 </div>
             <hr/>
-            <p>
-                I love video games! Whether it is playing or developing them. Diving into another world is so fascinating to me.
-            </p>
+            <Bubble
+                text='I love video games! Whether it is playing or developing them. Diving into another world is so fascinating to me.'
+            />
         </div>
         </>
     );
