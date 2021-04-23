@@ -46,7 +46,6 @@
 
     hr {
         border-color: #ff00ff;
-        border-width: 2px;
     }
 
     .text {
@@ -161,9 +160,14 @@
     align-items: center;
     justify-content: center;
 
+    .click-me {
+        position: absolute;
+        left: 25%;
+        font-size: 14px;
+    }
+
     hr {
         border-color: black;
-        border-width: 2px;
     }
 
     h1 {
@@ -174,7 +178,7 @@
     .bubble-container {
         margin-top: 40px;
         min-width: 25%;
-        width: 450px;
+        width: 350px;
         height: auto;
         left: 15%;
         position: relative;
@@ -190,7 +194,7 @@
         p {
             font-size: 22px;
             vertical-align: 50%;
-            padding: 40px;
+            padding: 50px 20px;
         }
     }
 
