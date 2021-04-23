@@ -64,7 +64,6 @@ const Banner = () => {
             <br/>
             <div className="arrow-container" data-aos="fade-up">
                 <a data-scroll href="#Project">
-                    <div className="text">Click Me</div>
                     <div className="arrow"></div>
                 </a>
             </div>
