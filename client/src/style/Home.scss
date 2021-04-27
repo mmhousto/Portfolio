@@ -247,8 +247,23 @@
         }
 
     }
-
     
+}
+
+.contact-container {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 2vw;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+    hr {
+        border-color: #ff00ff;
+    }
+
 }
 
 @media only screen and (max-width: 1024px) {

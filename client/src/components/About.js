@@ -18,6 +18,7 @@ const Bubble = (props) => {
     texts.push('React.JS is the bees knees! It is fast and you only need the basics - HTML, CSS, and JavaScript - and node.JS.');
     texts.push('My first game I ever played was, Mario Party 2, on the N64. One of my favorite games is Borderlands 2.');
     texts.push('I currently work in IT, for MCNC, as a Support Specialist. This allows my problem solving skills to continue to grow.');
+    texts.push('I am 23 years of age and love video games and soccer! Messi > Ronaldo');
 
     // changes text to next string in array.
     function changeText() {
@@ -66,7 +67,7 @@ const About = () => {
                 <Bubble />
                 <div className="image-container">
                     <img
-                        src={Me} alt="Picture of Morgan Houston, Game & Web Developer"
+                        src={Me} alt="Picture of Morgan Houston, A Game & Web Developer"
                     />
                 </div>
 
