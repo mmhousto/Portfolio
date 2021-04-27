@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Me from '../images/me.png';
+import Arrow from '../images/up-arrow-with-scribble.png';
 
 // Speech Bubble component
 const Bubble = (props) => {
@@ -12,8 +13,10 @@ const Bubble = (props) => {
     const [i, setI] = useState(1);
     texts.push('I love video games! Whether it is playing or developing them. Diving into another world is so fascinating to me.');
     texts.push('My top tech skills are JavaScript, C#, SQL, and node.js!');
-    texts.push('I am a highly motivated individual, who will not stop until everything is perfect.');
+    texts.push('I am a highly motivated individual, who will stop at nothing until everything is perfect.');
     texts.push('Interested in Software, Game, Mobile, and Web development opportunities.');
+    texts.push('React.JS is the bees knees!');
+    texts.push('My first game I ever played was, Mario Party 2, on the N64. One of my favorite games is Borderlands 2.');
 
     // changes text to next string in array.
     function changeText() {
@@ -32,7 +35,12 @@ const Bubble = (props) => {
                         {text}
                     </p>
                 </div>
+                <div className="click-me">
+                    <img src={Arrow} alt="Up arrow Icon from Flaticon made by Freepik"/>
+                    <div className="click-me-text">Click Here</div>
+                </div>
                 <div className="bubbles"></div>
+                
                 <div className="bubbles2"></div>
             </div>
         </>
@@ -55,7 +63,6 @@ const About = () => {
                 </div>
                 <hr />
                 <Bubble/>
-                <div className="click-me">Click Me</div>
                 <img
                     src={Me} alt="Picture of Morgan Houston, Game & Web Developer"
                 />

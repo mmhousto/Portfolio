@@ -60,7 +60,7 @@ const Work = () => {
 
                 <Project
                     title="MM's Gaming Community"
-                    description={"A place for gamers to play free online games! If they have an account, as they play they will earn points. Gamers can use the points to get colored backgrounds, image backgrounds, circle trails, fonts, and custom cursors.\n\nCreated with XAMPP, MySQL, HTML5, CSS3, JavaScript, Ajax and PHP"}
+                    description={"A place for gamers to play free online games and discuss gaming! If they have an account, as they play they will earn points. Gamers can use the points to get colored backgrounds, image backgrounds, circle trails, fonts, and custom cursors.\n\nCreated with XAMPP, MySQL, HTML5, CSS3, JavaScript, Ajax and PHP"}
                     image={MMsGCo}
                     url="https://mms-gaming.com/"
                     repo="https://github.com/mmhousto/MMsGaming"
