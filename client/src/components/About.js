@@ -15,13 +15,14 @@ const Bubble = (props) => {
     texts.push('My top tech skills are JavaScript, C#, SQL, and node.js!');
     texts.push('I am a highly motivated individual, who will stop at nothing until everything is perfect.');
     texts.push('Interested in Software, Game, Mobile, and Web development opportunities.');
-    texts.push('React.JS is the bees knees!');
+    texts.push('React.JS is the bees knees! It is fast and you only need the basics - HTML, CSS, and JavaScript - and node.JS.');
     texts.push('My first game I ever played was, Mario Party 2, on the N64. One of my favorite games is Borderlands 2.');
+    texts.push('I currently work in IT, for MCNC, as a Support Specialist. This allows my problem solving skills to continue to grow.');
 
     // changes text to next string in array.
     function changeText() {
-        setI(i+1);                  // increases i
-        if(i >= texts.length-1){    // if i > lenght of array, sets i = 0
+        setI(i + 1);                  // increases i
+        if (i >= texts.length - 1) {    // if i > lenght of array, sets i = 0
             setI(0)
         }
         setText(texts[i]);          // Sets new text
@@ -36,11 +37,11 @@ const Bubble = (props) => {
                     </p>
                 </div>
                 <div className="click-me">
-                    <img src={Arrow} alt="Up arrow Icon from Flaticon made by Freepik"/>
+                    <img src={Arrow} alt="Up arrow Icon from Flaticon made by Freepik" />
                     <div className="click-me-text">Click Here</div>
                 </div>
                 <div className="bubbles"></div>
-                
+
                 <div className="bubbles2"></div>
             </div>
         </>
@@ -62,10 +63,13 @@ const About = () => {
                     <h1>About Me</h1>
                 </div>
                 <hr />
-                <Bubble/>
-                <img
-                    src={Me} alt="Picture of Morgan Houston, Game & Web Developer"
-                />
+                <Bubble />
+                <div className="image-container">
+                    <img
+                        src={Me} alt="Picture of Morgan Houston, Game & Web Developer"
+                    />
+                </div>
+
             </div>
         </>
     );

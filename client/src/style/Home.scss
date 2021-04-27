@@ -213,7 +213,7 @@
 
         p {
             font-size: 22px;
-            padding: 80px 20px 0px;
+            padding: 70px 20px 0px;
         }
     }
 
@@ -237,11 +237,18 @@
         position: relative;
     }
 
-    img {
+    .image-container {
         padding-bottom: 20px;
-        width: 400px;
-        border-radius: 50%;
+
+        img {
+            width: 400px;
+            border-radius: 50%;
+            border: solid black 1px;
+        }
+
     }
+
+    
 }
 
 @media only screen and (max-width: 1024px) {
@@ -317,8 +324,12 @@
             height: 10px;
         }
 
-        img {
-            width: 50%;
+        .image-container {
+    
+            img {
+                width: 300px;
+            }
+    
         }
     }
 }
@@ -352,6 +363,7 @@
     .about-container {
 
         .bubble-container {
+            width: 70%;
 
             .bubble {
 
@@ -374,6 +386,14 @@
                     width: 48px;
                 }
             }
+        }
+
+        .image-container {
+    
+            img {
+                width: 200px;
+            }
+    
         }
     }
 }
