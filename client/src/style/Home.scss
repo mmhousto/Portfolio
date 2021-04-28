@@ -38,7 +38,8 @@
 .work-container {
     width: 100vw;
     height: auto;
-    background-color: black;
+    background: none;
+    ///background-color: black;
     position: relative;
     font-size: 2vw;
     text-align: center;
@@ -152,13 +153,14 @@
 }
 
 .about-container {
-    background-color: #ff00ff;
+    background: none;
     text-align: center;
     font-size: 2vw;
     height: 100%;
     width: 100vw;
     align-items: center;
     justify-content: center;
+    color: white;
 
     hr {
         border-color: black;
@@ -176,6 +178,7 @@
         height: auto;
         left: 15%;
         position: relative;
+        color: black;
 
         .click-me {
             position: absolute;
@@ -196,6 +199,7 @@
             }
 
             .click-me-text {
+                color: white;
                 display: flex;
                 float: left;
                 margin-left: -35px;
@@ -251,18 +255,14 @@
 }
 
 .contact-container {
-    background-color: white;
-    color: black;
+    background: none;
+    color: white;
     text-align: center;
     font-size: 2vw;
     height: 100vh;
     width: 100vw;
     align-items: center;
     justify-content: center;
-
-    hr {
-        border-color: #ff00ff;
-    }
 
 }
 

@@ -56,7 +56,7 @@ const Work = () => {
                 <div className="text" data-aos='slide-left'>
                         <h2>My Projects</h2>
                 </div>
-                <hr /><br/><br/>
+                <br/><br/>
 
                 <Project
                     title="MM's Gaming Community"

@@ -63,7 +63,6 @@ const About = () => {
                 <div data-aos='slide-right'>
                     <h1>About Me</h1>
                 </div>
-                <hr />
                 <Bubble />
                 <div className="image-container">
                     <img
