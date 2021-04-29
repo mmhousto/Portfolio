@@ -13,9 +13,23 @@ html, body, #root, .App {
 body {
   background-image: url("../images/background.png");
   background-repeat: repeat;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-position: center center;
   background-size: cover;
   position: relative;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+}
+

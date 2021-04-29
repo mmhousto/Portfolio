@@ -1,5 +1,5 @@
 .banner-container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url("../images/Welcome2.png");
     background-position: center center;
@@ -36,7 +36,7 @@
 }
 
 .work-container {
-    width: 100vw;
+    width: 100%;
     height: auto;
     background: none;
     ///background-color: black;
@@ -166,7 +166,7 @@
     text-align: center;
     font-size: 2vw;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     justify-content: center;
     color: white;
@@ -267,7 +267,7 @@
     text-align: center;
     font-size: 2vw;
     height: auto;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     justify-content: center;
 
@@ -310,9 +310,13 @@ footer {
     }
 }
 
+.NavBar-container {
+    width: 100%;
+    height: auto;
+}
+
 #nav {
     width: 100%;
-    float: right;
     margin: 0 0 3em 0;
     padding: 0;
     list-style: none;
@@ -337,11 +341,14 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+    
+
     .banner-container {
         width: 100vw;
         height: auto;
         font-size: 16px;
         background-size: cover;
+        overflow-x: hidden;
 
         .intro {
             padding: 40px 40px;
@@ -361,6 +368,7 @@ footer {
         }
     }
     .project-container {
+        overflow-x: hidden;
         width: 100vw;
         height: auto;
 
@@ -374,6 +382,8 @@ footer {
         }
     }
     .about-container {
+        overflow-x: hidden;
+
         .bubble-container {
             min-width: 25%;
             width: 55%;
@@ -414,6 +424,11 @@ footer {
             }
         }
     }
+
+    .contact-container {
+        overflow: hidden;
+    }
+
 }
 
 @media only screen and (max-width: 860px) {
@@ -472,6 +487,14 @@ footer {
             }
         }
     }
+
+    #nav {
+        font-size: 10px;
+
+        li a {
+            padding: 10px;
+        }
+    }
 }
 
 @media only screen and (orientation: landscape) and (max-device-width: 860px) {
@@ -512,6 +535,15 @@ footer {
             width: 30px;
         }
     }
+    
+    #nav {
+        top: 0;
+        font-size: 8px;
+
+        li a {
+            padding: 10px;
+        }
+    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -536,6 +568,14 @@ footer {
                     width: 40px;
                 }
             }
+        }
+    }
+
+    #nav {
+        font-size: 8px;
+
+        li a {
+            padding: 5px;
         }
     }
 }

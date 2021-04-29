@@ -14,11 +14,13 @@ import Home from './routes/Home';
 function App() {
 
   return (
-    <Font family='Rubik'>
-      <NavBar />
-      <Home />
-      <Footer />
-    </Font>
+    <div className="wrapper">
+      <Font family='Rubik'>
+        <NavBar />
+        <Home />
+        <Footer />
+      </Font>
+    </div>
 
   );
 }
