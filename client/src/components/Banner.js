@@ -14,7 +14,7 @@ const Banner = () => {
 
     return(
         <>
-        <div className="banner-container">
+        <div id="Connect" className="banner-container">
             <div className="intro">
                 <TextLoop
                     springCofig={{stiffness: 70, damping: 31 }}

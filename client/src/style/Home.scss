@@ -142,6 +142,15 @@
 #Project {
 }
 
+#About {
+}
+
+#Contact {
+}
+
+#Connect {
+}
+
 .project-container:hover .text-container {
     transform: translate(-50%, -50%); // rotateY(0deg);
     opacity: 1;
@@ -187,7 +196,7 @@
             display: inline-block;
             transform: rotateZ(15deg);
             padding: 20px;
-    
+
             img {
                 height: 64px;
                 width: 64px;
@@ -249,9 +258,7 @@
             border-radius: 50%;
             border: solid black 1px;
         }
-
     }
-    
 }
 
 .contact-container {
@@ -259,11 +266,74 @@
     color: white;
     text-align: center;
     font-size: 2vw;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     align-items: center;
     justify-content: center;
 
+    .contact-text {
+        white-space: pre-wrap;
+        line-height: 80px;
+        padding-bottom: 20px;
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: #ff00ff;
+        }
+    }
+}
+
+footer {
+    padding: 5px;
+    color: whitesmoke;
+    background-color: grey;
+    opacity: 0.3;
+
+    div {
+        display: inline-block;
+        width: 49.5%;
+    }
+
+    div + div {
+        text-align: right;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: #ff00ff;
+    }
+}
+
+#nav {
+    width: 100%;
+    float: right;
+    margin: 0 0 3em 0;
+    padding: 0;
+    list-style: none;
+    position: fixed;
+    z-index: 1;
+
+    li {
+        float: right;
+    }
+
+    li a {
+        display: block;
+        padding: 20px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+
+    a:hover {
+        color: #ff00ff;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -304,7 +374,6 @@
         }
     }
     .about-container {
-
         .bubble-container {
             min-width: 25%;
             width: 55%;
@@ -312,13 +381,13 @@
             margin: 40px auto 0px;
             left: 0%;
 
-            .click-me{
+            .click-me {
                 left: 0%;
                 padding: 0px;
                 transform: rotateZ(25deg);
             }
         }
-    
+
         .bubble {
             width: 100%;
             height: auto;
@@ -328,7 +397,7 @@
                 padding: 40px;
             }
         }
-    
+
         .bubbles {
             width: 30px;
             height: 25px;
@@ -340,11 +409,9 @@
         }
 
         .image-container {
-    
             img {
                 width: 300px;
             }
-    
         }
     }
 }
@@ -376,25 +443,21 @@
     }
 
     .about-container {
-
         .bubble-container {
             width: 70%;
 
             .bubble {
-
                 p {
                     padding: 40px 10px;
                 }
-                
             }
 
-            .click-me{
+            .click-me {
                 font-size: 12px;
 
                 .click-me-text {
                     margin-left: -25px;
                 }
-
 
                 img {
                     height: 48px;
@@ -404,11 +467,9 @@
         }
 
         .image-container {
-    
             img {
                 width: 200px;
             }
-    
         }
     }
 }
@@ -462,16 +523,13 @@
     }
 
     .about-container {
-
         .bubble-container {
-
-            .click-me{
+            .click-me {
                 font-size: 12px;
 
                 .click-me-text {
                     margin-left: -25px;
                 }
-
 
                 img {
                     height: 40px;
@@ -481,4 +539,3 @@
         }
     }
 }
-

@@ -9,19 +9,14 @@ import Work from '../components/Work.js';
 import About from '../components/About.js';
 import Contact from '../components/Contact.js';
 
-//libs
-import Font from 'react-font';
-
 function Home() {
 
     return (
         <>
-        <Font family='Rubik'>
-            <Banner/>
-            <Work/>
-            <About/>
-            <Contact/>
-        </Font>
+            <Banner />
+            <Work />
+            <About />
+            <Contact />
         </>
     );
 }

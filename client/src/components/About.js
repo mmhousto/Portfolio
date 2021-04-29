@@ -59,7 +59,7 @@ const About = () => {
 
     return (
         <>
-            <div className="about-container">
+            <div id="About" className="about-container">
                 <div data-aos='slide-right'>
                     <h1>About Me</h1>
                 </div>
