@@ -5,7 +5,7 @@ import PaddleBalls from '../images/Paddle-Balls.png';
 import DDD from '../images/DDD.png';
 import { FaGithubSquare } from 'react-icons/fa';
 import AOS from "aos";
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 
 const Project = (props) => {
 
@@ -13,29 +13,31 @@ const Project = (props) => {
 
     useEffect(() => {
         AOS.init({
-           duration : 2000
+            duration: 2000
         });
-      }, []);
+    }, []);
 
     return (
         <>
-            <div className="project-container" data-aos="flip-left" data-aos-easing="ease-in-cubic" tabIndex="0" onClick={(e) => {
-                            e.preventDefault();
-                            window.open(url, "_blank")
-                        }}>
-                <div className="image-container">
-                    <img src={image}/>
-                </div>
-                
-                <div className="text-container">
-                    <h2>{title}</h2>
-                    <p>{description}</p>
-                    <p onClick={(e) => {
+            
+                <div className="project-container" data-aos="flip-left" data-aos-easing="ease-in-cubic" tabIndex="0" onClick={(e) => {
+                    e.preventDefault();
+                    window.open(url, "_blank")
+                }}><a>
+                    <div className="image-container">
+                        <img src={image} />
+                    </div>
+
+                    <div className="text-container">
+                        <h2>{title}</h2>
+                        <p>{description}</p>
+                        <p onClick={(e) => {
                             e.preventDefault();
                             window.open(repo, "_blank")
-                        }}><FaGithubSquare size={45} className="git"/></p>
+                        }}><FaGithubSquare size={45} className="git" /></p>
+                    </div>
+                    </a>
                 </div>
-            </div>
         </>
     );
 }
@@ -44,19 +46,19 @@ const Work = () => {
 
     useEffect(() => {
         AOS.init({
-           duration : 1000
+            duration: 1000
         });
         window.addEventListener('load', AOS.refresh);
-      }, []);
+    }, []);
 
 
     return (
         <>
             <div id="Project" className="work-container">
                 <div className="text" data-aos='slide-left'>
-                        <h2>My Projects</h2>
+                    <h2>My Projects</h2>
                 </div>
-                <br/><br/>
+                <br /><br />
 
                 <Project
                     title="MM's Gaming Community"
@@ -65,7 +67,7 @@ const Work = () => {
                     url="https://mms-gaming.com/"
                     repo="https://github.com/mmhousto/MMsGaming"
                 />
-                <br/><br/>
+                <br /><br />
                 <Project
                     title="My Stripes"
                     description={"An e-commerce website for a clothing app. A remake of the Ruby on Rails version.\n\nCreated with Postgres, Express, React, Node.JS, SCSS, Heroku and JavaScript"}
@@ -73,7 +75,7 @@ const Work = () => {
                     url="http://my-stripes.herokuapp.com/"
                     repo="https://github.com/zda17/MyStripesShop---API"
                 />
-                <br/><br/>
+                <br /><br />
                 <Project
                     title="Paddle Balls"
                     description={"A native mobile arcade game, like pong with gravity!\nAvailable on iOS, Android and PC.\n\nCreated with Unity Engine and C#"}
@@ -81,7 +83,7 @@ const Work = () => {
                     url="https://apps.apple.com/us/app/paddle-balls/id1549834349"
                     repo="https://github.com/mmhousto/Gravity-Balls"
                 />
-                <br/><br/>
+                <br /><br />
                 <Project
                     title="Del Delivery Drivers"
                     description={"A web app, created to compare the prices of different delivery services.\n\nCreated with XAMPP, Apache, MySQL, HTML5, CSS3, JavaScript, PHP, and Google Maps API"}
@@ -89,7 +91,7 @@ const Work = () => {
                     url="https://github.com/mmhousto/DeliveryDatabase"
                     repo="https://github.com/mmhousto/DeliveryDatabase"
                 />
-                <br/><br/>
+                <br /><br />
             </div>
         </>
     );

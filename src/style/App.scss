@@ -19,22 +19,12 @@ body {
   background-size: cover;
   position: relative;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .wrapper {
   width: 100%;
   height: 100%;
   
-}
-
-@media only screen and (max-width: 1024px) {
-
-  body {
-    width: 100vw;
-    overflow-x: hidden;
-    position: relative;
-  }
-
 }
 
