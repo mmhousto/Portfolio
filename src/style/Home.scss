@@ -95,7 +95,7 @@
     }
 }
 
-.git:hover, .git:active {
+.git:hover, .git:focus, .git:active {
     color: white;
 }
 
@@ -127,7 +127,7 @@
     transition: border-width 150ms ease-in-out;
 }
 
-.arrow-container:hover, .arrow-container:active {
+.arrow-container:hover, .arrow-container:focus, .arrow-container:active {
     .arrow {
         border-bottom-width: 3px;
         border-right-width: 3px;
@@ -151,12 +151,12 @@
 #Connect {
 }
 
-.project-container:hover .text-container, .project-container:active .text-container {
+.project-container:hover .text-container, .project-container:focus .text-container, .project-container:active .text-container {
     transform: translate(-50%, -50%); // rotateY(0deg);
     opacity: 1;
 }
 
-.project-container:hover .image-container, .project-container:active .image-container {
+.project-container:hover .image-container, .project-container:focus .image-container, .project-container:active .image-container {
     //transform: rotateY(-180deg);
     opacity: 0;
 }
@@ -265,7 +265,7 @@
     background: none;
     color: white;
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
     height: auto;
     width: 100%;
     align-items: center;
@@ -426,7 +426,7 @@ footer {
     }
 
     .contact-container {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
 }

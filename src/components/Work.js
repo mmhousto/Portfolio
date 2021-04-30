@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import MMsGCo from '../images/MMsGaming.png';
 import MyStripes from '../images/My-Stripes.jpg';
 import PaddleBalls from '../images/Paddle-Balls.png';
 import DDD from '../images/DDD.png';
-import { FaPhp, FaHtml5, FaCss3, FaJs, FaAndroid, FaGithubSquare } from 'react-icons/fa';
+import { FaGithubSquare } from 'react-icons/fa';
 import AOS from "aos";
 import 'aos/dist/aos.css'; 
 
@@ -19,7 +19,7 @@ const Project = (props) => {
 
     return (
         <>
-            <div className="project-container" data-aos="flip-left" data-aos-easing="ease-in-cubic" onClick={(e) => {
+            <div className="project-container" data-aos="flip-left" data-aos-easing="ease-in-cubic" tabIndex="0" onClick={(e) => {
                             e.preventDefault();
                             window.open(url, "_blank")
                         }}>

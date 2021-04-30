@@ -30,6 +30,11 @@ body {
 
 @media only screen and (max-width: 1024px) {
 
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+  }
 
 }
 

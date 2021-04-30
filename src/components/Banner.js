@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import TextLoop from "react-text-loop";
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import AOS from "aos";
@@ -62,7 +62,7 @@ const Banner = () => {
                     /></h3>
             </div>
             <br/>
-            <div className="arrow-container" data-aos="fade-up">
+            <div className="arrow-container" data-aos="fade-up" tabIndex="0">
                 <a data-scroll href="#Project">
                     <div className="arrow"></div>
                 </a>
