@@ -3,7 +3,7 @@ import MMsGCo from '../images/MMsGaming.png';
 import MyStripes from '../images/My-Stripes.jpg';
 import PaddleBalls from '../images/Paddle-Balls.png';
 import DDD from '../images/DDD.png';
-import MagnetDestroyer from '../images/magDestroyer.png';
+import MagnetDestroyer from '../images/MagnetDestroyer.png';
 import ZombCube from '../images/ZombCube.png';
 import { FaGithubSquare } from 'react-icons/fa';
 import AOS from "aos";
