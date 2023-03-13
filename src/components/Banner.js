@@ -31,7 +31,7 @@ const Banner = () => {
                         <span>Shalom,</span>
                         <span>God dag,</span>
                     </TextLoop>{" "}
-                <br/><br/><div data-aos="fade-up"><h1>My name is Morgan Houston. I am an aspiring Game & Web Developer!</h1></div>
+                <br/><br/><div data-aos="fade-up"><h1>My name is Morgan Houston. I am an aspiring Game Developer, creating everlasting relationships with real-time 3D! I teach Programming & Game Development!</h1></div>
             </div>
 
             <div className="social" data-aos="fade-up">

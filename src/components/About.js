@@ -12,13 +12,13 @@ const Bubble = (props) => {
     const texts = [];
     const [i, setI] = useState(1);
     texts.push('I love video games! Whether it is playing or developing them. Diving into another world is so fascinating to me.');
-    texts.push('My top tech skills are JavaScript, C#, SQL, and node.js!');
+    texts.push('My top tech skills are C#, Unity, JavaScript, SQL, HTML, CSS and node.js!');
     texts.push('I am a highly motivated individual, who will stop at nothing until everything is perfect.');
-    texts.push('Interested in Software, Game, Mobile, and Web development opportunities.');
+    texts.push('Interested in Software, Game, Mobile, and Web development opportunities using Unity.');
     texts.push('React.JS is the bees knees! It is fast and you only need the basics - HTML, CSS, and JavaScript - and node.JS.');
     texts.push('My first game I ever played was, Mario Party 2, on the N64. One of my favorite games is Borderlands 2.');
-    texts.push('I currently work in IT, for MCNC, as a Support Specialist. This allows my problem solving skills to continue to grow.');
-    texts.push('I am 23 years of age and love video games and soccer! Messi > Ronaldo');
+    texts.push('I currently work as an Instructor, for GCTC, teaching Programming and Game Development. This strengthens my C# and Unity skills and improves my leadership.');
+    texts.push('I am 25 years of age and love video games and soccer! Messi > Ronaldo');
 
     // changes text to next string in array.
     function changeText() {
