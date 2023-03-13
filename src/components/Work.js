@@ -3,6 +3,8 @@ import MMsGCo from '../images/MMsGaming.png';
 import MyStripes from '../images/My-Stripes.jpg';
 import PaddleBalls from '../images/Paddle-Balls.png';
 import DDD from '../images/DDD.png';
+import MagnetDestroyer from '../images/magDestroyer.png';
+import ZombCube from '../images/ZombCube.png';
 import { FaGithubSquare } from 'react-icons/fa';
 import AOS from "aos";
 import 'aos/dist/aos.css';
@@ -81,7 +83,7 @@ const Work = () => {
                 <Project
                     title="Magnet Destroyer"
                     description={"Play this new, free, casual, arcade game, Magnet Destroyer! Available on iOS and Android.\n\nCreated with Unity and Sloyd.ai"}
-                    image={magDestroyer}
+                    image={MagnetDestroyer}
                     url="https://mms-gaming.com/Magnet-Destroyer/"
                     repo="https://github.com/mmhousto/Magnet-Destroyer"
                 />
