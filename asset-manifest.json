@@ -1,32 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.389791aa.chunk.css",
-    "main.js": "/Portfolio/static/js/main.4bd08d4d.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.4bd08d4d.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.88fabfc4.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.88fabfc4.js.map",
-    "static/css/2.4707e12a.chunk.css": "/Portfolio/static/css/2.4707e12a.chunk.css",
-    "static/js/2.68ed5d5e.chunk.js": "/Portfolio/static/js/2.68ed5d5e.chunk.js",
-    "static/js/2.68ed5d5e.chunk.js.map": "/Portfolio/static/js/2.68ed5d5e.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.92688961.css",
+    "main.js": "/Portfolio/static/js/main.9f5722c3.js",
+    "static/media/Welcome2.png": "/Portfolio/static/media/Welcome2.0a5d788edce642444d21.png",
+    "static/media/me.png": "/Portfolio/static/media/me.d7013c8234c2abdd44e2.png",
+    "static/media/MagnetDestroyer.png": "/Portfolio/static/media/MagnetDestroyer.6abcc47ca5f036be5830.png",
+    "static/media/background.png": "/Portfolio/static/media/background.d683fbbde9c3ce556f7c.png",
+    "static/media/My-Stripes.jpg": "/Portfolio/static/media/My-Stripes.a9eb1b6ef3c5330892fa.jpg",
+    "static/media/MMsGaming.png": "/Portfolio/static/media/MMsGaming.e1aa421226c00b1886ad.png",
+    "static/media/DDD.png": "/Portfolio/static/media/DDD.8310044057368d405ed3.png",
+    "static/media/Paddle-Balls.png": "/Portfolio/static/media/Paddle-Balls.93a0035da94291e50227.png",
+    "static/media/ZombCube.png": "/Portfolio/static/media/ZombCube.79e1ba5782ef36092bb6.png",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.a4a4a8868512359d1686a044910ab934.js": "/Portfolio/precache-manifest.a4a4a8868512359d1686a044910ab934.js",
-    "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/2.4707e12a.chunk.css.map": "/Portfolio/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.389791aa.chunk.css.map": "/Portfolio/static/css/main.389791aa.chunk.css.map",
-    "static/js/2.68ed5d5e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.68ed5d5e.chunk.js.LICENSE.txt",
-    "static/media/DDD.png": "/Portfolio/static/media/DDD.bd17debd.png",
-    "static/media/MMsGaming.png": "/Portfolio/static/media/MMsGaming.2e9ae583.png",
-    "static/media/My-Stripes.jpg": "/Portfolio/static/media/My-Stripes.ca298c52.jpg",
-    "static/media/Paddle-Balls.png": "/Portfolio/static/media/Paddle-Balls.9250971e.png",
-    "static/media/Home.scss": "/Portfolio/static/media/Welcome2.7c339423.png",
-    "static/media/App.scss": "/Portfolio/static/media/background.24d503fe.png",
-    "static/media/me.png": "/Portfolio/static/media/me.05cdaff4.png"
+    "main.92688961.css.map": "/Portfolio/static/css/main.92688961.css.map",
+    "main.9f5722c3.js.map": "/Portfolio/static/js/main.9f5722c3.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.88fabfc4.js",
-    "static/css/2.4707e12a.chunk.css",
-    "static/js/2.68ed5d5e.chunk.js",
-    "static/css/main.389791aa.chunk.css",
-    "static/js/main.4bd08d4d.chunk.js"
+    "static/css/main.92688961.css",
+    "static/js/main.9f5722c3.js"
   ]
 }
